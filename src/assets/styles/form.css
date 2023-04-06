@@ -1,0 +1,57 @@
+@font-face {
+    font-family: hangman;
+    src: url("../fonts/MagilioRegular-Yzv2O.ttf");
+}
+
+* {
+    font-family: hangman;
+    font-size: 16px;
+}
+
+body {
+    background-image: url("../images/moonlight2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formular {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 50%;
+    background: linear-gradient(to top, #410d6099 0%, #840b5c98 100%);
+    border-radius: 10px;
+}
+
+#play {
+    background: linear-gradient(to top, #840b5c 0%, #410d60 100%);
+}
+
+input {
+    background: none;
+}
+
+select {
+    background-color: #410d60;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    appearance: none;
+    margin-top: 1%;
+}
+
+select:focus {
+    outline: none;
+}
+
+select:option {
+    background-color: #fff;
+    color: #410d60;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}

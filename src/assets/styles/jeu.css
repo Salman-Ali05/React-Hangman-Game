@@ -1,0 +1,123 @@
+@font-face {
+    font-family: hangman;
+    src: url("../fonts/MagilioRegular-Yzv2O.ttf");
+}
+
+* {
+    font-family: hangman;
+    font-size: 16px;
+}
+
+body {
+    background-image: url("../images/moonlight2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hangman-game {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to top, #410d6099 0%, #840b5c98 100%);
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+}
+
+.container {
+    width: 50%;
+}
+
+button {
+    background: linear-gradient(to top, #840b5c 0%, #410d60 100%);
+}
+
+.hangman {
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.349);
+    border-radius: 10px;
+}
+
+.hangman>div {
+    background: white;
+}
+
+.head {
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.body {
+    width: 10px;
+    height: 85px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-arm {
+    width: 70px;
+    height: 10px;
+    transform: rotate(35deg);
+    position: fixed;
+    top: 35%;
+    right: 24.5%;
+}
+
+.right-arm {
+    width: 70px;
+    height: 10px;
+    transform: rotate(-35deg);
+    position: fixed;
+    top: 35%;
+    right: 21%;
+}
+
+.left-leg {
+    width: 70px;
+    height: 10px;
+    transform: rotate(-45deg);
+    position: fixed;
+    bottom: 31%;
+    right: 24.5%;
+}
+
+.left-leg-resized {
+    width: 70px;
+    height: 10px;
+    transform: rotate(-45deg);
+    position: fixed;
+    bottom: 51.2%;
+    right: 24.3%;
+}
+
+.right-leg {
+    width: 70px;
+    height: 10px;
+    transform: rotate(45deg);
+    position: fixed;
+    bottom: 31%;
+    right: 21%;
+}
+
+.pole-x {
+    width: 5px;
+    height: 80%;
+    position: fixed;
+    top: 5%;
+    right: 35%;
+}
+
+.pole-y {
+    width: 25%;
+    height: 5px;
+    position: fixed;
+    top: 5%;
+    right: 10%;
+}
